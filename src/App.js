@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Card from './components/Card';
 import Interval from './components/Interval';
-import Mean from './components/Average';
+import Average from './components/Average';
 import Sum from './components/Sum';
 import Random from './components/Random';
 
@@ -18,7 +18,7 @@ function App() {
 				<Interval min={min} max={max} onChangeMin={setMin} onChangeMax={setMax}></Interval>
 			</div>
 			<div className='line'>
-				<Mean min={min} max={max}></Mean>
+				<Average min={min} max={max}></Average>
 				<Sum min={min} max={max}></Sum>
 				<Random min={min} max={max}></Random>
 			</div>
