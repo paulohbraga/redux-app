@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import Card from './components/Card';
 import Interval from './components/Interval';
 import Average from './components/Average';
 import Sum from './components/Sum';
@@ -8,14 +7,11 @@ import Random from './components/Random';
 
 function App() {
 
-	const [min, setMin] = useState(0);
-    const [max, setMax] = useState(10);
-
 	return (
 		<div className='App'>
 			<h1>React-Redux lesson</h1>
 			<div className='line'>
-				<Interval min={min} max={max} onChangeMin={setMin} onChangeMax={setMax}></Interval>
+				<Interval></Interval>
 			</div>
 			<div className='line'>
 				<Average min={min} max={max}></Average>

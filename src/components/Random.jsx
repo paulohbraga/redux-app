@@ -1,12 +1,13 @@
 import React from 'react'
-
 import Card from './Card';
 
-export default props => {
+import { connect } from 'react-redux'
 
-    const {min, max} = props
-    const randon = parseInt(Math.random() * (max - min)) + min
 
+const Random = props => {
+
+    const { min, max } = props
+    const randon = Math.floor(Math.random() * (max - min)) + min
     return (
         <Card title='Random number' purple>
             <div>
@@ -16,3 +17,12 @@ export default props => {
         </Card>
     )
 };
+
+const mapStateToProps = state => {
+    return {
+        min: state.numbers.min,
+        max: state.numbers.max
+    }
+}
+
+export default connect(mapStateToProps)(Random);
