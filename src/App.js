@@ -14,9 +14,9 @@ function App() {
 				<Interval></Interval>
 			</div>
 			<div className='line'>
-				<Average min={min} max={max}></Average>
-				<Sum min={min} max={max}></Sum>
-				<Random min={min} max={max}></Random>
+				<Average></Average>
+				<Sum></Sum>
+				<Random></Random>
 			</div>
 		</div>
 	);
