@@ -3,7 +3,6 @@ import Card from './Card';
 
 import { connect } from 'react-redux'
 
-
 const Sum = props => {
     const {min, max} = props
 

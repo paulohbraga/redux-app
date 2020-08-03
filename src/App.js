@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Interval from './components/Interval';
-import Mean from './components/Average';
+import Average from './components/Average';
 import Sum from './components/Sum';
 import Random from './components/Random';
 
@@ -14,7 +14,7 @@ function App() {
 				<Interval></Interval>
 			</div>
 			<div className='line'>
-				<Mean></Mean>
+				<Average></Average>
 				<Sum></Sum>
 				<Random></Random>
 			</div>

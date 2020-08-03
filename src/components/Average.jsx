@@ -4,7 +4,7 @@ import Card from './Card';
 import { connect } from 'react-redux'
 
 
-const Media = (props) => {
+const Average = (props) => {
     const { min, max } = props
     return (
         <Card title='Average' green>
@@ -23,4 +23,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(Media);
+export default connect(mapStateToProps)(Average);
