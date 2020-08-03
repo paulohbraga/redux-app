@@ -10,7 +10,7 @@ const store = storeConfig()
 
 
 ReactDOM.render(
-  <Provider store={store} >
+  <Provider store={ store } >
     <React.StrictMode>
       <App />
     </React.StrictMode>

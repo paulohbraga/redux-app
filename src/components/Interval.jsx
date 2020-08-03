@@ -11,8 +11,11 @@ const Interval = props => {
     return (
         <Card title='Number interval' red>
             <div className='Interval'>
-                <span>Minimun: <input type='number' value={min} onChange={e => props.setMin(+e.target.value)}></input></span>
-                <span>Max: <input type='number' value={max} onChange={ e => props.setMax(+e.target.value)}></input> </span>
+                <span>Minimun: <input type='number' value={min} 
+                onChange={e => props.setMin(+e.target.value)}></input></span>
+                
+                <span>Max: <input type='number' value={max} 
+                onChange={ e => props.setMax(+e.target.value)}></input> </span>
             </div>
         </Card>
     )
