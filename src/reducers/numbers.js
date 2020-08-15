@@ -5,6 +5,7 @@ const initialState = {
     max: 1
 }
 
+
 export default function (state = initialState, action) {
 
     switch (action.type) {
